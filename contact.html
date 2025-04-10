@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="#" method="POST">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="nameInput" name="name" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="messageInput" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="response"></p> <!-- Custom response area -->
+    </section>
+</section>
+
+<!-- New User List Section -->
+<section class="user-list-section">
+    <h2>Team Members</h2>
+    <ul id="userList"></ul> <!-- This will hold the user names -->
+    <button id="loadUsersBtn">Load Users</button> <!-- Button to load users -->
+</section>
+
+
+    <footer>
+        <p>&copy; 2025 SPL_ONLINE_SERVICES.</p>
+    </footer>
+<!-- Back to Top Button -->
+<button id="backToTopBtn" class="back-to-top-btn">Back to Top</button>
+
+</body>
+
+<script src="script.js" defer></script>
+</html>
